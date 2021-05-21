@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat:300,400&display=swap');
+
+:root {
+    --green: #32b777;
+    --white: #fff;
+    --gray: #555;
+    --lightgray: #ececec;
+    --darkgray: #222;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    color: var(--gray);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.container::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/**************
+Header
+**************/
+header {
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../img/horiznos-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 30px;
+    color: var(--white);
+}
+
+header .logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--white);
+    font-family: 'Comfortaa', cursive;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0 30px;
+    color: var(--white);
+}
+
+header h1 {
+    font-size: 3rem;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+
+header button {
+    background-color: var(--green);
+    color: var(--white);
+    text-transform: capitalize;
+    padding: 10px 50px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.2rem;
+    margin: 20px 0 200px 0;
+}
+
+header button:hover {
+    background-color: var(--white);
+    color: var(--gray);
+    transition: .4s ease;
+}
+
+/**************
+One
+**************/
+.one {
+    text-align: center;
+    background-color: var(--lightgray);
+    padding: 70px 0 30px 0;
+}
+
+.one h2,
+.two h2 {
+    font-size: 2.5rem;
+    font-family: 'Comfortaa', cursive;
+}
+
+.one h2 + p,
+.two h2 + p {
+    font-size: 1.3rem;
+    padding-bottom: 30px;
+}
+
+.one article {
+    float: left;
+    width: 33%;
+    padding: 30px;
+    text-align: left;
+}
+
+.one article p {
+    font-size: 1rem;
+}
+
+.one article img {
+    width: 100%;
+}
+
+/**************
+Two
+**************/
+
+.two {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.two .row article {
+    float: left;
+    width: 50%;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.two .row i {
+    float: left;
+    display: inline-block;
+    font-size: 2.5rem;
+    color: var(--white);
+    padding: 20px;
+    background-color: var(--green);
+    margin-right: 25px;
+}
+
+.two .row .text h4 {
+    font-size: 1.4rem;
+}
+
+/**************
+Footer
+**************/
+
+footer {
+    background-color: var(--darkgray);
+    color: var(--gray);
+    padding: 70px 0;
+}
+
+footer .col {
+    float: left;
+    width: 33%;
+}
+
+footer .col h4 {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+footer .col:nth-of-type(2) {
+    text-indent: 100px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer .copy {
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer .copy a {
+    color: var(--white);
+}
+
+footer .copy::before {
+    display: block;
+    content: "";
+    background-color: var(--lightgray);
+    border: none;
+    width: 80%;
+    height: 2px;
+    margin: 10px auto 30px auto;
+}
+
+
+/**************
+Responsive
+**************/
+
+@media(max-width:768px) {
+    .container {
+        width:90%;
+    }
+    header {
+        padding: 30px;
+    }
+    header nav ul li a {
+        padding: 0 15px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        padding-top: 100px;
+    }
+    
+    header button {
+        margin: 20px 0 100px 0;
+    }
+
+    .one article {
+        width: 100%;
+    }
+    
+    .two article {
+        padding: 0 10px;
+    }
+    
+    .two .row article {
+        width: 100%;
+    }
+    
+    footer .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    footer .col:last-child {
+        margin-bottom: 0;
+    }
+    footer .col:nth-of-type(2) {
+        text-indent: 0px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
